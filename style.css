@@ -1,0 +1,48 @@
+header{text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+main{
+    text-align: left;
+    color: #333;
+    font-style:inherit;
+    max-width: 50%;
+    line-height: 1.6;
+    font-weight: bold;
+    padding-left:50px;
+    position:flex;
+     
+
+
+}
+
+footer{
+    text-align: center;
+    font-size: 0.9em;
+    color: #1d0d59;
+    padding:100px;
+    margin-top: 20px;
+    font-weight: bold;
+    bottom:0;
+    width:100%;
+    ;
+    
+    
+}
+.card{
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 400px;
+    padding:15px;
+    overflow:hidden;
+    background-color: aqua;
+    
+}
+img{
+    float:left;
+    margin-right:150px;
+    max-width:300px
+}
+

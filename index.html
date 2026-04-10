@@ -11,7 +11,9 @@
     <title>Ellah's Cleaning Services</title> 
     <!--style css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    
 
 </head> 
 
@@ -19,6 +21,7 @@
 
     <header>
         <h1>Welcome to Ellah's Cleaning Services😊</h1>
+        
         <nav> <a href="index.html">Home</a> | 
 
             <a href="about.html">About</a> | 
@@ -26,23 +29,57 @@
             <a href="contact.html">Contact</a>
             
             <a href="services.html">Services</a>
-            <h2>Your Trusted Partner Who Keeps Cleaninness in Botswana</h2>
-            <button class="cta-button">Book Now</button>
+
+            <a href="booking.html">Booking</a>
+            <br>
+
+           <br> <a href="booking.html" class="cta-button">Book Now</a>
+           </nav>
+
+            <div class="search-container">
+              <br>
+               <select id="serviceSelect">
+        <option value=""> View Our Cleaning Options Below👇🏽</option>
+        <option value="residential">Residential Cleaning</option>
+        <option value="office">Office Cleaning</option>
+        <option value="mall">mall Cleaning</option>
+        <option value="Hospital">Hospital Cleaning</option>
+    </select>
+ 
+    <button type="button" onclick="startSearch()">Search</button>
+</div>
+<!-- Your content goes above here --> 
+
+     
+
+    <script src="script.js"></script> 
+
+</body> 
+           </div>
 
         </nav> 
 
     </header> 
+    
 
     <main>
-        <p>Life is always busy.... between work and family cleaning is the last thing you would want to do
-        Dont worry about anything much we got you covered.</p>
+        <p class="intro-text">Life is always busy between work and family cleaning is the last thing you would want to
+        do not worry about anything much we got you covered.</p>
+        <img src="thumbs up _cleaning.jpg" alt="cleaning">
 
-        <h3>Why Choose Us?</h3>
-        <div>
-            <i class="fa-solid fa-broom"></i>
-            <p>We provide top-notch services😎👌</p>
-        </div>
-        <i class="fa-solid fa-shield-heart"></i>
-        <p>Guaranteed Satisfaction</p>
-        
-    </main>
+        <div class="col md-4"> 
+        <div class="card"> 
+
+                <div class="card-body"> 
+
+                    <h5 class="card-title">Did You Know?</h5> 
+
+                    <p class="card-text">We have great weekend deals .When you have booked us more than 3 times you get 50% off in your next booking.Dont miss this opportunity.</p>
+                    </div>
+                
+ </main>
+
+    <footer>
+        <p>&copy;2026 Ellah's Cleaning Services. All rights reserved.</p>
+    </footer>
+    </html>

@@ -8,7 +8,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>My Services</title> 
+    <title>Our Services</title> 
+    <style>
+        .services-container{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap: 30px;
+            padding:20px;
+            align-items: flex-start;
+            
+        }
+        .service-card img{
+            width:350px;
+            height:auto;
+            border-radius:8px;
+        }
+        .details-btn{
+            width:auto;
+            padding:5px;
+            margin:5px;
+            cursor:pointer;
+        }
+    </style>
 
 </head> 
 
@@ -16,7 +38,7 @@
 
     <header> 
 
-        <h1>My Services</h1> 
+        <h1>Our Services</h1> 
 
         <nav> 
 
@@ -28,8 +50,61 @@
 
             <a href="services.html">Services</a>
 
+            <a href="booking.html">Booking</a>
+
         </nav> 
 
     </header> 
 
  <main> 
+    <section id="services-grid">
+    <h2>Our Professional Cleaning Packages </h2>
+ 
+    <div class="services-container">
+ 
+        <article class="service-card">
+            <img src="residential cleaning.jpg" alt="cleaning" style="width:350px;height:230px">
+            <h3>Residential Cleaning</h3>
+            <p>Perfect for homes and apartments.</p>
+            <select class="details-btn">
+        <option value="">View Details 👇</option>
+        <option>Price: P450</option>
+        <option>Duration: 3 Hours</option>
+        <option>Deep Vacuuming Included</option>
+        <option>All Surfaces Sanitized</option>
+    </select>
+
+        <a href="booking.html" class="select-btn">Book This Service</a>
+        <div id="residential-info"></div>
+        </article>
+ 
+        <article class="service-card">
+            <img src="office cleaning.jpg" alt="Office">
+            <h3>Office Cleaning</h3>
+            <p>Keep your workspace professional.</p>
+            <select class="details-btn" style="width:120px; font-size:13px;">
+        <option value="">View Details 👇</option>
+        <option>Price:P300 per office if more than 5 each will cost P250 </option>
+        <option>Floor Polishing if necessary</option>
+        <option>Window Cleaning</option>
+        <option>Dusting of vents and hard to reach places</option>
+        <option>Note!We work during knock off times and early in the morning before employees come to work</option>
+    </select>
+ 
+    <a href="booking.html" class="select-btn">Book This Service</a>
+</article>
+        
+        <article class="service-card">
+            <img src="mall cleaning.jpg" alt="mall">
+            <h3>mall cleaning</h3>
+            <p>For a 100% spotless environment.</p>
+        <a href="booking.html" class="select-btn">Book This Service</a>
+        </article>
+
+        <article class="service-card">
+            <img src="hospital cleaning.jpg" alt="hospital">
+            <a href="booking.html" class="select-btn">Book This Service</a>
+        </article>
+ 
+    </div>
+</section>
