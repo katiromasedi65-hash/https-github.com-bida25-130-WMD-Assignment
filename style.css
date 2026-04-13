@@ -2,6 +2,9 @@ header{text-align: center;
     font-weight: bold;
     font-style: italic;
 }
+h1{display:inline;
+    vertical-align: middle;
+}
 main{
     text-align: left;
     color: #333;
