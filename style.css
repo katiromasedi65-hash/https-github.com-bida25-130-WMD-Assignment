@@ -4,6 +4,12 @@ header{text-align: center;
 }
 h1{display:inline;
     vertical-align: middle;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.read-aloud-bar{
+    margin-bottom: 15px;
 }
 main {
     display: flex;
