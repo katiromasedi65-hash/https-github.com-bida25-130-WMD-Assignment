@@ -5,21 +5,28 @@ header{text-align: center;
 h1{display:inline;
     vertical-align: middle;
 }
-main{
-    text-align: left;
-    color: #333;
-    font-style:inherit;
-    max-width: 50%;
-    line-height: 1.6;
-    font-weight: bold;
-    padding-left:50px;
-    position:flex;
-     
-
-
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-footer{
+img {
+    width: 300px;
+    height: auto;
+}
+
+.card {
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+}
+    footer{
     text-align: center;
     font-size: 0.9em;
     color: #1d0d59;
@@ -29,22 +36,14 @@ footer{
     bottom:0;
     width:100%;
     ;
+} 
+
+
+
+
+
     
     
-}
-.card{
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 20px;
-    max-width: 400px;
-    padding:15px;
-    overflow:hidden;
-    background-color: aqua;
-    
-}
-img{
-    float:left;
-    margin-right:150px;
-    max-width:300px
-}
+
+
+     
