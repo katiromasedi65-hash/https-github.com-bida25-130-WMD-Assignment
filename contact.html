@@ -11,7 +11,39 @@
     <title>Contact Us</title>
     <style>
 
-        /*Hide the answer initially*/
+    input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.faq-answer{
+    display: none;
+    padding: 2px;
+    background-color: #afdc6f;
+    width: 100%;
+}
+
+.active .faq-answer {
+    display: block;
+}
+
+.faq-item{
+    margin-bottom: 15px;
+}
 .faq-answer{
     display:none;
     padding:2px;
