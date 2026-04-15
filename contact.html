@@ -14,17 +14,23 @@
         /*Hide the answer initially*/
 .faq-answer{
     display:none;
-    padding:10px;
-    background-color: #ddd;
+    padding:2px;
+    background-color: #afdc6f;
+    width: 60%;
+    
 
 }
-.faq-item.active .faq-answer{
-    display:block;
+
+.active .faq-answer {
+  display: block;
 }
+
 .faq-item{
+    
     margin-bottom:15px;
 
 }
+
     </style>
 
      
@@ -37,6 +43,18 @@
 
         <h1>Contact Us</h1>
         <nav> 
+
+            <div class="read-aloud-bar">
+  <span class="ra-dots">•••</span>
+  <span class="ra-label">Read aloud</span>
+  <div class="ra-controls">
+    <button class="ra-btn" onclick="readPage()" title="Play">▶</button>
+    <button class="ra-btn" onclick="pauseReading()" title="Pause">⏸</button>
+    <button class="ra-btn" onclick="resumeReading()" title="Resume">⏭</button>
+    <button class="ra-btn" onclick="stopReading()" title="Stop">✕</button>
+  </div>
+</div>
+    
 
             <a href="index.html">Home</a> | 
 
@@ -69,9 +87,17 @@
             <ul>
                 <li><i class="fa-solid fa-envelope"></i> ellah's cleaning services @gmail.com</li>
                 <li><i class="fa-solid fa-phone"></i> +267 78511527 </li>
-                <li><i class="fa-solid fa-location-dot"></i> Gaborone, Botswana</li>
-            </ul>
-        </div>
+                <li><i class="fa-solid fa-location-dot"></i> Ramotswa(Disana Ward), Botswana</li>
+                <li> 
+                    <a href="https://maps.google.com/?q=-24.867647,25.833231&entry=gps" target="_blank">View on google maps our📍Location</a>
+                 </li>
+                </ul>
+                </div>
+
+        
+ 
+                
+ 
 
             
             <form onsubmit="sendContactMessage(event)">
@@ -95,7 +121,7 @@
                     <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                   <p> Our standard cleaning package includes basic cleaning vacuuming,disinfecting surfaces etcetra.</p>
+                   <p> Our standard cleaning package includes basic cleaning ,vacuuming,disinfecting surfaces etcetra.</p>
                 </div>
                 </div>
 
@@ -118,6 +144,7 @@
                         <p>A customer can only cancel or reschedule their appointment free of charge up to 24hrs before the scheduled start time</p>
                     </div>
                 </div>
+                <img src=" Google maps pic.jpg" alt="location" style="float: right; width: 270px; height: auto; margin-left: 20px; margin-bottom: 20px; margin-top:-200px;">
 
 
 
@@ -125,17 +152,16 @@
         </div>
     </section>
 </main>
-<!-- Your content goes above here --> 
 
-     
 
-    <script src="script.js"></script> 
-
-</body>
  
 <footer>
-    <p>&copy; 2026 Ellah's Cleaning Services</p>
+    <p &copy; style="margin-top: 150px; text-align:center; color:blue;">© 2026 Ellah's Cleaning Services</p>
+    
 </footer>
+
+<script src="script.js"></script>
+</body>
 </html>
  
  

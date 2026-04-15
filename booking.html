@@ -66,6 +66,8 @@
         footer{
             bottom: 0;
         }
+        
+
     </style>
 </head>
 
@@ -76,6 +78,20 @@
         <h1>Book Now</h1>
         <nav> 
 
+            <div class="read-aloud-bar">
+  <span class="ra-dots">•••</span>
+  <span class="ra-label">Read aloud</span>
+  <div class="ra-controls">
+    <button class="ra-btn" onclick="readPage()" title="Play">▶</button>
+    <button class="ra-btn" onclick="pauseReading()" title="Pause">⏸</button>
+    <button class="ra-btn" onclick="resumeReading()" title="Resume">⏭</button>
+    <button class="ra-btn" onclick="stopReading()" title="Stop">✕</button>
+  </div>
+</div>
+
+    
+
+
             <a href="index.html">Home</a> | 
 
             <a href="about.html">About</a> | 
@@ -85,9 +101,11 @@
             <a href="services.html">Services</a>
             
             <a href="booking.html">Booking</a>
+
+            
         
        
-       
+       <main>
          <form onsubmit="confirmBooking(event)">
         <fieldset>
             <legend>User Personal Information</legend>
@@ -113,25 +131,15 @@
             <form onsubmit="confirmBooking(event)">
             <input type="submit" value="Submit" />
         </fieldset>
-    </form>
-    <!-- Your content goes above here --> 
-
-     
-
-    <script src="script.js"></script> 
-
-</body>
-</html>
-
-         </nav> 
- 
-    </header> 
-
-    <main>
         
+    </form>
     </main>
-    <footer>
+
+ <footer>
         <p>&copy; 2026 Ellah's Cleaning Services. All rights reserved</p>
         </footer>
-    </body>
+
+        <script src="script.js"></script>
+
+ </body>
     </html>

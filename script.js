@@ -40,3 +40,25 @@ for (let i = 0; i < acc.length; i++) {
     this.parentElement.classList.toggle("active");
   });
 }
+
+function readPage() {
+  const text = document.querySelector("main").innerText;
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.lang = "en-US";
+  speech.rate=1;
+  window.speechSynthesis.speak(speech);
+}
+
+function pauseReading() {
+  window.speechSynthesis.pause();
+}
+ 
+function resumeReading() {
+  window.speechSynthesis.resume();
+}
+ 
+function stopReading() {
+  window.speechSynthesis.cancel();
+}
+
+ 
