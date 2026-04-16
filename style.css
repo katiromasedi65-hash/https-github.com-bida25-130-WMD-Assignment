@@ -8,9 +8,13 @@ h1{display:inline;
     margin-bottom: 15px;
 }
 
-.read-aloud-bar{
-    margin-bottom: 15px;
+nav{
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
 }
+    
+
 main {
     display: flex;
     align-items: center;
