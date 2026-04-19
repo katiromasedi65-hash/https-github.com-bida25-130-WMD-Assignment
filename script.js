@@ -18,17 +18,18 @@ function startSearch() {
     }
 }
 function confirmBooking(event) {
+  event.preventDefault();
   
- 
+  const form = event.target;
+  const data = new FormData(form);
+  
+  fetch("https://formsubmit.co/katiromasedi65@gmail.com", {
+    method: "POST",
+    body: data
+  }).then(() => {
     alert("Booking Successfully Submitted!");
-}
-
-function sendContactMessage(event) {
-    event.preventDefault();
- 
-    alert("Message Successfully Submitted.Thank you for your feedback😊!");
- 
     window.location.href = "index.html";
+  });
 }
 
 const acc = document.getElementsByClassName("faq-question");
