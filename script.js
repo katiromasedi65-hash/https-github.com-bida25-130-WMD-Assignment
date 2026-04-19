@@ -1,7 +1,7 @@
 
 console.log("JavaScript is connected!");
 function startSearch() {
-    s
+    
     let menu = document.getElementById("serviceSelect");
     
     
