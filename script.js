@@ -18,12 +18,11 @@ function startSearch() {
     }
 }
 function confirmBooking(event) {
-    event.preventDefault();
+  
  
     alert("Booking Successfully Submitted!");
- 
-    window.location.href = "index.html";
 }
+
 function sendContactMessage(event) {
     event.preventDefault();
  
@@ -46,34 +45,3 @@ window.addEventListener("load", () => {
   speechSynthesis.getVoices();
 });
 
-function readPage() {
-  const text = document.querySelector("main").innerText;
-  const speech = new SpeechSynthesisUtterance(text);
-  speech.lang = "en-US";
-  speech.rate = 1;
-
-  const voices = speechSynthesis.getVoices();
-  if (voices.length > 0) {
-    speech.voice = voices.find(v => v.lang === "en-US") || voices[0];
-    speechSynthesis.speak(speech);
-  } else {
-    speechSynthesis.onvoiceschanged = () => {
-      const v = speechSynthesis.getVoices();
-      speech.voice = v.find(voice => voice.lang === "en-US") || v[0];
-      speechSynthesis.speak(speech);
-    };
-  }
-}
-
-function pauseReading() {
-  window.speechSynthesis.pause();
-}
-
-function resumeReading() {
-  window.speechSynthesis.resume();
-}
-
-function stopReading() {
-  window.speechSynthesis.cancel();
-}
- 
