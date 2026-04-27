@@ -1,17 +1,58 @@
 header{text-align: center;
     font-weight: bold;
-    font-style: italic;
+    
+    
+    
+
 }
 h1{display:inline;
     vertical-align: middle;
     font-size: 24px;
     margin-bottom: 15px;
+    color:rgb(239, 245, 239);
 }
+
+
+
+
 
 nav{
     font-size: 14px;
     line-height: 2;
     text-align: center;
+    
+}
+nav a {
+  color: rgb(240, 235, 235);
+  font-size: large;
+  
+}
+
+nav a:hover {
+  color: rgb(41, 113, 17);
+}
+.intro-text{
+    color:rgb(152, 201, 229);
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+#serviceSelect{
+    background-color:rgb(226, 229, 204);
+    color:rgba(13, 14, 13, 0.902);
+}
+
+
+
+
+body{
+    
+    background-image:url("background image 2.0.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    
 }
     
 
@@ -22,11 +63,16 @@ main {
     gap: 30px;
     padding: 20px;
     flex-wrap: wrap;
+    
 }
 
 img {
-    width: 300px;
-    height: auto;
+    width: 400px;
+    height: 330px;
+    margin-right: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    
 }
 
 .card {
@@ -39,13 +85,13 @@ img {
     footer{
     text-align: center;
     font-size: 0.9em;
-    color: #1d0d59;
+    color:rgb(235, 241, 237);
     padding:100px;
     margin-top: 20px;
     font-weight: bold;
     bottom:0;
     width:100%;
-    ;
+    
 } 
 
 

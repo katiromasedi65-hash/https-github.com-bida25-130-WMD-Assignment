@@ -21,6 +21,15 @@ function startSearch() {
 function confirmBooking(event) {
   alert("Booking Successfully Submitted😊");
 }
+
+function sendContactMessage(event){
+event.preventDefault();
+  let name = document.querySelector('input[name="name"]').value;
+  let phone = document.querySelector('input[name="phone"]').value;
+  let message = document.querySelector('textarea[name="message"]').value;
+
+  alert("Thank you for your feedback/enquiries");
+}
     
     
 

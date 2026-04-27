@@ -15,7 +15,7 @@
             align-items: left;
             height: 100vh;
             margin-left: 50px;
-            background-color: #e7eae7;
+            background-color: #6ab56a;
         }
         form {
             width: 400px;
@@ -46,6 +46,7 @@
             box-sizing: border-box;
             border: 1px solid #ccc;
             border-radius: 4px;
+            color:red;
         }
         .gender-group {
             margin-bottom: 10px;
@@ -65,6 +66,7 @@
         }
         footer{
             bottom: 0;
+            text-align: center;
         }
         
 
@@ -115,6 +117,8 @@
             </div>
             <label for="service-date">Enter the date for the service:</label>
             <input type="date" id="service-date" name="service-date" required />
+            <label for="service-type">Enter the type of the service</label>
+            <textarea id="type" name="type" required></textarea>
             <label for="address">Enter your Address:</label>
             <textarea id="address" name="address" required></textarea>
             <label for="special instructions">Any special instructions:</label>
