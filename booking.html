@@ -8,9 +8,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Book a service now</title>
- <style> nav{
+ <style> nav a{
     
     line-height:1.8;
+    color:white;
+    
  }
         body {
             display: flex;
@@ -18,7 +20,7 @@
             align-items: left;
             height: 100vh;
             margin-left: 50px;
-            background-color: #88c49d;
+            background-color: #54695b;
         }
         form {
             width: 400px;
@@ -102,7 +104,7 @@
         
        
        <main>
-         <form action="https://formsubmit.co/ellahcleaningservices@gmail.com" method="POST">
+         <form id="booking form"action="https://formsubmit.co/ellahcleaningservices@gmail.com" method="POST">
         <fieldset>
             <legend>User Personal Information</legend>
             <label for="name">Enter your full name:</label>
@@ -131,6 +133,9 @@
         </fieldset>
         
     </form>
+    <div id="booking-thanks" style="display: none;">
+  <p>Booking Successfully Submitted 😊</p>
+</div>
     </main>
 
  <footer>

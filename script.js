@@ -19,8 +19,11 @@ function startSearch() {
     }
 
 function confirmBooking(event) {
-  alert("Booking Successfully Submitted😊");
+  event.preventDefault();
+  document.getElementById("booking-form").style.display = "none";
+  document.getElementById("booking-thanks").style.display = "block";
 }
+
 
 function sendContactMessage(event){
 event.preventDefault();
@@ -28,7 +31,7 @@ event.preventDefault();
   let phone = document.querySelector('input[name="phone"]').value;
   let message = document.querySelector('textarea[name="message"]').value;
 
-  alert("Thank you for your feedback/enquiries");
+  alert("Thank you for your feedback/enquiries😊");
 }
     
     

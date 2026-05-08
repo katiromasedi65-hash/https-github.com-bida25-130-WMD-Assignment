@@ -14,7 +14,7 @@
             display: flex;
             flex-wrap:wrap;
             justify-content: center;
-            gap: 30px;
+            gap:25px;
             padding:20px;
             align-items: flex-start;
             
@@ -31,6 +31,20 @@
             cursor:pointer;
             background-color: beige;
         }
+       @media (min-width: 1280px) {
+    .services-container {
+        justify-content: flex-start;
+        max-width: 1100px;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .service-card img {
+        width: 350px;
+        height: auto;
+    }
+}
     </style>
 
 </head> 
