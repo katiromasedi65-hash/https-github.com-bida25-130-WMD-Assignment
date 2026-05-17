@@ -14,7 +14,7 @@
             display: flex;
             flex-wrap:wrap;
             justify-content: center;
-            gap:25px;
+            gap:20px;
             padding:20px;
             align-items: flex-start;
             
@@ -35,9 +35,12 @@
     .services-container {
         justify-content: flex-start;
         max-width: 1100px;
-        margin: 0 auto;
+        margin: left;
         gap: 20px;
-        padding: 30px;
+        padding-left:0;
+        display:flex;
+        flex-wrap: wrap;
+        
     }
 
     .service-card img {
@@ -77,11 +80,11 @@
  <main> 
     <section id="services-grid">
     <h2>Our Professional Cleaning Packages </h2>
- 
-    <div class="services-container"style="display:flex; flex-wrap:wrap; justify-content:flex-start;">
+     <div class="services-container">
+  
  
         <article class="service-card">
-            <img src="residential cleaning.jpg" alt="cleaning" style="width: 350px;height:230px;">
+            <img src="residential cleaning.jpg" alt="cleaning" style="width: 350px;height:230px; margin-right: 40px;">
             <h3>Residential Cleaning</h3>
             <p>Perfect for homes and apartments.</p>
             <select class="details-btn">
@@ -120,7 +123,7 @@
         </article>
 
         <article class="service-card" style="float:left;">
-            <img src="hospital cleaning.jpg" alt="hospital" width: 350px;height:230px; object-fit:cover;>
+            <img src="hospital cleaning.jpg" alt="hospital" width: 350px;height:230px; object-fit:cover; margin-right:40px;>
             <h3>hospital cleaning</h3>
             <p>Fully cleaned health care environments</p>
             <a href="booking.html" class="select-btn">Book This Service</a>

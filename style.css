@@ -1,5 +1,6 @@
 header{text-align: center;
     font-weight: bold;
+    font-size: 1.5em;
     
     
     
@@ -7,9 +8,10 @@ header{text-align: center;
 }
 h1{display:inline;
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 15px;
     color:rgb(202, 221, 97);
+    
 }
 
 
